@@ -13,7 +13,7 @@ html{
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
     justify-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
    
 }
 .cabecalho{
@@ -76,7 +76,7 @@ html{
     font-size: 1.7rem;
 }
 .categorias{
-    display:grid; 
+    display:grid;
     gap: 8px;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
@@ -113,7 +113,93 @@ html{
 .testes{
     padding: 5rem 1rem;
     height: 8rem;
-
     background-color:#9EDAED;
 }
+.rodapemobile{
+    display: none;
+}
+@media (max-width:45rem){
+    .cabecalho{
+        padding: 1rem 0 0 1rem;
+        background-image: url(./imagens/Imagem\ cabeçalho\ mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: contain;
+                height: 250px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
     
+    .esquerda{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .direita{
+        flex-wrap: nowrap;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-shrink: 0;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+    .rodape{
+        display:none ;
+        bottom: 0;
+        right: 0;
+    }
+    .cabecalho h1{
+        font-family: asap;
+        font-size: 2.5rem;
+        margin-left: -3px;
+        line-height: 2.2rem;
+
+    }
+    .subtitulo{
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        margin-bottom: 0rem;    
+    }
+    .categorias{
+        grid-template-columns: repeat(auto-fit, 150px);
+    }
+    .caixaverde{
+        font-size: medium;
+        width: 9rem;
+        height: 2rem;
+        padding: 3rem 1rem;
+        border-radius: 20px;
+    }
+
+    .titulotestesgratis{
+        margin-left: 1rem;
+    }
+
+    .titulocategorias{
+        padding-left: 1rem;
+    }
+
+    .selecao{
+        padding-left: 1rem;
+    }
+
+    .imagens{
+        grid-template-columns: repeat(auto-fit, minmax(120px, 150px));  
+    }
+    .corpo{
+        font-size: small;
+        margin-top: 0.8rem;
+    }
+    .rodapemobile{
+        text-align: right;
+        display: block;
+        font-size: small;
+        margin-bottom: 2rem;
+    }
+}
