@@ -12,7 +12,8 @@ html{
     gap: 8px;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
-    justify-items: center
+    justify-items: center;
+    margin-bottom: 10rem;
    
 }
 .cabecalho{
@@ -65,6 +66,7 @@ html{
     font-family: abel;
     font-weight: 900;
     font-size: 1.7rem;
+    margin-top: 2rem;
 }
 .titulocategorias{
     margin-top: 2rem;
@@ -97,10 +99,21 @@ html{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-
     font-size: x-large;
     padding: 0 4rem;
     text-align: center;
-    
-
 }
+.titulotestesgratis{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: abel;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.testes{
+    padding: 5rem 1rem;
+    height: 8rem;
+
+    background-color:#9EDAED;
+}
+    
