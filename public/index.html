@@ -56,6 +56,29 @@
         <a href="https://amzn.to/3EtBoa8"><div class="caixaverde">Prime Video</div></a>
         <a href="https://amzn.to/3EzfceI"><div class="caixaverde">Loja Kindle</div></a>
     </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAwvjSN3kEgSTHUGrOUyLsLC3HLpUpwFgc",
+          authDomain: "loja-annabarrosf.firebaseapp.com",
+          projectId: "loja-annabarrosf",
+          storageBucket: "loja-annabarrosf.appspot.com",
+          messagingSenderId: "1031930025775",
+          appId: "1:1031930025775:web:2a60c2998e6d83e9dcf3da",
+          measurementId: "G-SV983Z1SY7"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 </body>
 
 </html>
