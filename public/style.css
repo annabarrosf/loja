@@ -4,13 +4,13 @@ box-sizing: border-box;}
 html{
     max-width: 1155px;
     margin:auto;
-
+    font-family: abel;
 }
 
 .imagens{
     display:grid; 
     gap: 8px;
-    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
     justify-items: center
    
@@ -46,14 +46,11 @@ html{
     margin-left: -3px;
 }
 .subtitulo{
-    font-family: abel;
+    
     text-transform: uppercase;
     font-size: 1.2rem;
     margin-bottom: -0.7rem;
     
-}
-.corpo{
-    font-family: assistant;
 }
 .rodape{
     font-family: work sans;
@@ -62,4 +59,48 @@ html{
     justify-content: flex-end;
     align-self: flex-end;
     margin-bottom: 1rem;
+}
+.selecao{ 
+    margin-bottom: 2rem;
+    font-family: abel;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.titulocategorias{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: abel;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.categorias{
+    display:grid; 
+    gap: 8px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    justify-items: center
+
+}
+.categorias a{
+    text-decoration: none;
+    color: black;
+}
+.categorias a:visited{
+    color: black;
+    }
+
+.caixaverde{
+    background-color:#CCFFBB;
+    height: 6rem;
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+
+    font-size: x-large;
+    padding: 0 4rem;
+    text-align: center;
+    
+
 }
