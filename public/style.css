@@ -36,7 +36,7 @@ html{
 }
 
 .direita{
-    width: 40%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -120,15 +120,16 @@ html{
 }
 @media (max-width:45rem){
     .cabecalho{
-        padding: 1rem 0 0 1rem;
+        position: relative;
+        padding: 2rem 0 0 1rem;
         background-image: url(./imagens/Imagem\ cabeçalho\ mobile.png);
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
-                height: 250px;
+        height: 250px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     
     .esquerda{
@@ -137,26 +138,32 @@ html{
         justify-content: flex-start;
         width: 100%;
         margin-left: 0px;
-    }
+        margin-top: 1rem;
+            }
     
     .direita{
         flex-wrap: nowrap;
-        width: 40%;
+        width: 37%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
         flex-shrink: 0;
-        padding-bottom: 0px;
+        padding-bottom: px;
         margin-bottom: 0px;
+        
     }
     .rodape{
-        display:none ;
-        bottom: 0;
+        position: absolute;
+        bottom: 1rem;
         right: 0;
+        width: 15rem;
+        font-size: 0.5rem;
+        text-align: left;
+        padding-right: 0.5rem;
     }
     .cabecalho h1{
         font-family: asap;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-left: -3px;
         line-height: 2.2rem;
 
@@ -180,9 +187,10 @@ html{
     .titulotestesgratis{
         margin-left: 1rem;
     }
-
+    
     .titulocategorias{
         padding-left: 1rem;
+        margin-top: 1rem;
     }
 
     .selecao{
