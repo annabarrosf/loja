@@ -123,6 +123,23 @@ html{
 .rodapemobile{
     display: none;
 }
+
+.propaganda{
+    display: flex;
+    justify-content: center;
+}
+
+.rodapedosite{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.escritorodape{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
 @media (max-width:45rem){
     .cabecalho{
         position: relative;
