@@ -1,27 +1,63 @@
-*{margin:0;
-padding: 0;
-box-sizing: border-box;}
-html{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
     max-width: 1155px;
-    margin:auto;
+    margin: auto;
     font-family: abel;
 }
 
-.imagens{
-    display:grid; 
+.imagens {
+    display: grid;
     gap: 8px;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
     justify-items: center;
     margin-bottom: 3rem;
-   
+
 }
-.imagens > div > a{
+
+.imagens>div>a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.cabecalho{
+
+.tempolimitado {
+    margin-bottom: 2rem;
+    font-family: abel;
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.destaque {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0 4rem;
+    text-align: center;
+    margin: auto;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.imagemdestaque {
+    display: block;
+    height: 8rem;
+}
+
+.cabecalho {
     padding: 1rem 0 0 2rem;
     background-image: url(./imagens/Imagem\ cabeçalho.png);
     background-repeat: no-repeat;
@@ -32,7 +68,7 @@ html{
     margin-bottom: 2rem;
 }
 
-.esquerda{
+.esquerda {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,25 +76,28 @@ html{
     margin-left: 100px;
 }
 
-.direita{
+.direita {
     width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
-.cabecalho h1{
+
+.cabecalho h1 {
     font-family: asap;
     font-size: 3.66rem;
     margin-left: -3px;
 }
-.subtitulo{
-    
+
+.subtitulo {
+
     text-transform: uppercase;
     font-size: 1.2rem;
     margin-bottom: -0.7rem;
-    
+
 }
-.rodape{
+
+.rodape {
     font-family: work sans;
     font-size: xx-small;
     flex-direction: column;
@@ -66,38 +105,37 @@ html{
     align-self: flex-end;
     margin-bottom: 1rem;
 }
-.selecao{ 
+
+.selecao {
     margin-bottom: 2rem;
     font-family: abel;
     font-weight: 900;
     font-size: 1.7rem;
     margin-top: 2rem;
 }
-.titulocategorias{
+
+.titulocategorias {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: abel;
     font-weight: 900;
     font-size: 1.7rem;
 }
-.categorias{
-    display:grid;
+
+.categorias {
+    display: grid;
     gap: 8px;
     grid-template-columns: repeat(auto-fit, 200px);
     justify-content: center;
     justify-items: center
-
 }
-.categorias a{
-    text-decoration: none;
+
+a:visited {
     color: black;
 }
-.categorias a:visited{
-    color: black;
-    }
 
-.caixaverde{
-    background-color:#CCFFBB;
+.caixaverde {
+    background-color: #CCFFBB;
     height: 6rem;
     width: 12rem;
     display: flex;
@@ -108,40 +146,45 @@ html{
     padding: 0 4rem;
     text-align: center;
 }
-.titulotestesgratis{
+
+.titulotestesgratis {
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: abel;
     font-weight: 900;
     font-size: 1.7rem;
 }
-.testes{
+
+.testes {
     padding: 5rem 1rem;
     height: 8rem;
-    background-color:#9EDAED;
+    background-color: #9EDAED;
 }
-.rodapemobile{
+
+.rodapemobile {
     display: none;
 }
 
-.propaganda{
+.propaganda {
     display: flex;
     justify-content: center;
 }
 
-.rodapedosite{
+.rodapedosite {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.escritorodape{
+
+.escritorodape {
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
 
 }
-@media (max-width:45rem){
-    .cabecalho{
+
+@media (max-width:45rem) {
+    .cabecalho {
         position: relative;
         padding: 2rem 0 0 1rem;
         background-image: url(./imagens/Imagem\ cabeçalho\ mobile.png);
@@ -153,17 +196,17 @@ html{
         justify-content: space-between;
         margin-bottom: 0rem;
     }
-    
-    .esquerda{
+
+    .esquerda {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         width: 100%;
         margin-left: 0px;
         margin-top: 0.2rem;
-            }
-    
-    .direita{
+    }
+
+    .direita {
         flex-wrap: nowrap;
         width: 37%;
         display: flex;
@@ -172,9 +215,10 @@ html{
         flex-shrink: 0;
         padding-bottom: px;
         margin-bottom: 0px;
-        
+
     }
-    .rodape{
+
+    .rodape {
         position: absolute;
         bottom: 1rem;
         right: 0;
@@ -183,22 +227,26 @@ html{
         text-align: left;
         padding-right: 0.5rem;
     }
-    .cabecalho h1{
+
+    .cabecalho h1 {
         font-family: asap;
         font-size: 2.2rem;
         margin-left: -3px;
         line-height: 2.2rem;
 
     }
-    .subtitulo{
+
+    .subtitulo {
         text-transform: uppercase;
         font-size: 0.8rem;
-        margin-bottom: 0rem;    
+        margin-bottom: 0rem;
     }
-    .categorias{
+
+    .categorias {
         grid-template-columns: repeat(auto-fit, 150px);
     }
-    .caixaverde{
+
+    .caixaverde {
         font-size: medium;
         width: 9rem;
         height: 2rem;
@@ -206,27 +254,29 @@ html{
         border-radius: 20px;
     }
 
-    .titulotestesgratis{
+    .titulotestesgratis {
         margin-left: 1rem;
     }
-    
-    .titulocategorias{
+
+    .titulocategorias {
         padding-left: 1rem;
         margin-top: 1rem;
     }
 
-    .selecao{
+    .selecao {
         padding-left: 1rem;
     }
 
-    .imagens{
-        grid-template-columns: repeat(auto-fit, minmax(120px, 150px));  
+    .imagens {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 150px));
     }
-    .corpo{
+
+    .corpo {
         font-size: small;
         margin-top: 0.8rem;
     }
-    .rodapemobile{
+
+    .rodapemobile {
         text-align: right;
         display: block;
         font-size: small;
