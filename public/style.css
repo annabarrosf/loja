@@ -49,6 +49,14 @@ html {
     margin: auto;
     
 }
+.titulomagalu{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: abel;
+    font-weight: 900;
+    font-size: 1.7rem;
+
+}
 
 a{
     text-decoration: none;
